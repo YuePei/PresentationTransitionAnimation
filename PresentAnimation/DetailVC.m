@@ -20,6 +20,7 @@
 @property (nonatomic, strong)NavigationPopAnimation *popAnimation;
 
 @property (nonatomic, strong)UIPercentDrivenInteractiveTransition *percentTransition;
+
 @end
 
 @implementation DetailVC
