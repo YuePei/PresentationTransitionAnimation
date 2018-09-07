@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="eZI-Sl-Ymx">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="zhe-5M-boY">
+            <objects>
+                <navigationController id="eZI-Sl-Ymx" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="GX5-7h-4OV">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="vrA-sq-tmu"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WiB-XS-JZZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1474" y="-5"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="pb9-N1-9Fo">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="r2c-jc-RM2">
+                                    <size key="itemSize" width="111" height="125"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cell1" id="yha-RJ-Zoa" customClass="CollectionViewCell">
+                                        <rect key="frame" x="0.0" y="0.0" width="111" height="125"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                            <rect key="frame" x="0.0" y="0.0" width="111" height="125"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="结义" translatesAutoresizingMaskIntoConstraints="NO" id="Lig-uW-rI8">
+                                                    <rect key="frame" x="0.0" y="0.0" width="111" height="83"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" secondItem="Lig-uW-rI8" secondAttribute="height" multiplier="520:389" id="bNP-w1-DiX"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Gakki" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ES9-jB-u3V">
+                                                    <rect key="frame" x="37.5" y="93" width="36.5" height="22"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </view>
+                                        <color key="backgroundColor" red="0.80129679568527923" green="0.80129679568527923" blue="0.80129679568527923" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="ES9-jB-u3V" secondAttribute="bottom" constant="10" id="4xV-dD-7AK"/>
+                                            <constraint firstItem="Lig-uW-rI8" firstAttribute="top" secondItem="yha-RJ-Zoa" secondAttribute="top" id="6bW-mv-XYL"/>
+                                            <constraint firstAttribute="trailing" secondItem="Lig-uW-rI8" secondAttribute="trailing" id="PEy-Qh-4LK"/>
+                                            <constraint firstItem="ES9-jB-u3V" firstAttribute="top" secondItem="Lig-uW-rI8" secondAttribute="bottom" constant="10" id="Ur5-FP-Sly"/>
+                                            <constraint firstItem="ES9-jB-u3V" firstAttribute="centerX" secondItem="yha-RJ-Zoa" secondAttribute="centerX" id="hZ5-8j-uEq"/>
+                                            <constraint firstItem="Lig-uW-rI8" firstAttribute="leading" secondItem="yha-RJ-Zoa" secondAttribute="leading" id="wNx-Fx-Vuv"/>
+                                        </constraints>
+                                        <size key="customSize" width="111" height="125"/>
+                                        <connections>
+                                            <outlet property="imageView" destination="Lig-uW-rI8" id="ZOh-dg-ICS"/>
+                                            <outlet property="nameLabel" destination="ES9-jB-u3V" id="jc3-eY-kcM"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="pb9-N1-9Fo" secondAttribute="trailing" id="3BH-p3-ARN"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="pb9-N1-9Fo" secondAttribute="bottom" id="AFq-qv-E8a"/>
+                            <constraint firstItem="pb9-N1-9Fo" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="XRG-Nb-man"/>
+                            <constraint firstItem="pb9-N1-9Fo" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="ify-0d-3dM"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="eVt-Qe-8RA"/>
+                    <connections>
+                        <outlet property="collectionView" destination="pb9-N1-9Fo" id="Jey-NV-Gu7"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-567.20000000000005" y="-6.746626686656672"/>
+        </scene>
+        <!--DetailVC-->
+        <scene sceneID="cCv-RO-wzb">
+            <objects>
+                <viewController storyboardIdentifier="detailVC" id="9JW-r5-EKR" customClass="DetailVC" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="1SP-BU-zuR">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="结义" translatesAutoresizingMaskIntoConstraints="NO" id="9iX-qZ-1wM">
+                                <rect key="frame" x="0.0" y="20" width="375" height="280.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="9iX-qZ-1wM" secondAttribute="height" multiplier="520:389" id="Tay-5o-biD"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qLW-CB-Pnt">
+                                <rect key="frame" x="5" y="320.5" width="365" height="150.5"/>
+                                <string key="text">    2007年是gakki非常重要的一年，电影《恋空》和电视剧《父女7日变》。这两部重要的作品，确定了gakki的演艺之路。不过18岁的gakki还是演技上还是太年轻了。《父女7日变》中完全被父亲的颜艺碾压了，但是仔细看的话会发现后面几集gakki比前几集是有很大进步的。《父女7日变》是个很成功的作品，我今年7月的时候看了一遍依旧笑的不能自理。而《まっしろ（纯白）》这一本写真是gakki的第二本写真，主打北国风光的“雪”主题。这部作品里有gakki温泉照哦</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="9iX-qZ-1wM" firstAttribute="top" secondItem="r2G-xv-3vz" secondAttribute="top" id="GfU-Cp-XPX"/>
+                            <constraint firstItem="9iX-qZ-1wM" firstAttribute="leading" secondItem="r2G-xv-3vz" secondAttribute="leading" id="I1p-UA-tOO"/>
+                            <constraint firstItem="r2G-xv-3vz" firstAttribute="trailing" secondItem="qLW-CB-Pnt" secondAttribute="trailing" constant="5" id="Jxt-1t-zZ6"/>
+                            <constraint firstItem="r2G-xv-3vz" firstAttribute="trailing" secondItem="9iX-qZ-1wM" secondAttribute="trailing" id="daV-Sx-NRw"/>
+                            <constraint firstItem="qLW-CB-Pnt" firstAttribute="leading" secondItem="r2G-xv-3vz" secondAttribute="leading" constant="5" id="ll0-Do-Yvd"/>
+                            <constraint firstItem="qLW-CB-Pnt" firstAttribute="top" secondItem="9iX-qZ-1wM" secondAttribute="bottom" constant="20" id="m05-zT-g2n"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="r2G-xv-3vz"/>
+                    </view>
+                    <connections>
+                        <outlet property="detailLabel" destination="qLW-CB-Pnt" id="Aja-fs-3sw"/>
+                        <outlet property="iv" destination="9iX-qZ-1wM" id="gCA-Hm-YO6"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3a1-7B-SQf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="148" y="-7.6461769115442282"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="结义" width="520" height="389"/>
+    </resources>
+</document>
